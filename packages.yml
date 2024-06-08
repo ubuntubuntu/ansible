@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: true
+  tasks:
+  - name: Install nmap
+    ansible.builtin.apt:
+      name: 
+        - nmap
+        - htop
+        - vim-nox
